@@ -1,0 +1,33 @@
+<resources>
+    <string name="nama_aplikasi">Kamera Dokumen</string>
+    <string name="version_name">Embrio</string>
+    <string name="version_code">2016</string>
+    <string name="title_activity_tampilan_utama">Tampilan Utama</string>
+    <string name="title_activity_tampilan_pratinjau">Tampilan Pratinjau</string>
+    <string name="Kesalahan">Kesalahan!</string>
+    <string name="Pertanyyan">Pertanyaan tindakan?</string>
+    <string name="format_tanggal">yyMMdd_HHmmss</string>
+    <string name="p_menghapus">File gambar akan dihapus.</string>
+    <string name="sedang_simpan">Sedang menyimpan.</string>
+    <string name="sedang_membuka_galeri">Mohon tunggu, operasi membuka galeri telah berjalan</string>
+    <string name="gagal_simpan">Gagal menyimpan file gambar.</string>
+    <string name="gagal_hapus">Gagal menghapus file.</string>
+    <string name="gagal_koreksi">Gagal menyelesaikan koreksi skew</string>
+    <string name="gagal_buka_kamera">Gagal membuka kamera.</string>
+    <string name="gagal_buka_galeri">Gagal membuka aplikasi galeri.</string>
+
+    <string name="telah_berhasil_dihapus">File telah dihapus.</string>
+    <string name="telah_berhasil_disimpan">File telah disimpan.</string>
+    <integer name="kualitas_gambar">100</integer>
+    <string name="nama_awal_file">KD_</string>
+    <string name="simpan">Simpan</string>
+    <string name="Tombol_back">Silakan ambil tindakan</string>
+    <string name="ok">Ok</string>
+    <string name="batal">Batal</string>
+    <string name="cobalagi">Coba Lagi</string>
+
+    <string name="TCapture">Tombol Potret</string>
+    <string name="TGaleri">Tombol Galeri</string>
+    <string name="TFlash">Tombol Flash</string>
+    <string name="TSimpan">Tombol Simpan</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+    </style>
+    <style name="dialog" parent="android:DeviceDefault.Light.ButtonBar.AlertDialog">
+    </style>
+
+
+
+</resources>

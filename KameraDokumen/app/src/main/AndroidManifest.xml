@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.ustj.egitsaputra.kameradokumen"
+    android:versionCode="@string/version_code"
+    android:versionName="@string/version_name">
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.Camera"/>
+
+    <supports-screens android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"/>
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:restoreAnyVersion="true"
+        android:supportsRtl="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/nama_aplikasi"
+        android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+        <activity
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:name=".TampilanUtama"
+            android:label="@string/nama_aplikasi" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:immersive="true"
+            android:configChanges="orientation|keyboard|layoutDirection|navigation"
+            android:name=".TampilanPratinjau"
+            android:label="@string/title_activity_tampilan_pratinjau"
+            android:parentActivityName=".TampilanUtama" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.ac.ustj.egitsaputra.kameradokumen.TampilanUtama" />
+        </activity>
+    </application>
+
+</manifest>

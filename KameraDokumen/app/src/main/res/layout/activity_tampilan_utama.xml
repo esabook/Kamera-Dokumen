@@ -1,0 +1,120 @@
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        tools:context=".TampilanUtama"
+        android:id="@+id/dasar"
+        android:background="#ffa7ffad"
+        android:clipChildren="false">
+
+        <SurfaceView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/previewCamera"
+        android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/indikator"
+            android:elevation="0dp"
+            android:layout_alignBottom="@id/previewCamera"
+            android:layout_alignTop="@id/previewCamera"
+            android:layout_alignRight="@id/previewCamera"
+            android:layout_alignLeft="@id/previewCamera" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/TFlash"
+            android:adjustViewBounds="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/flash_off"
+            android:background="@drawable/tekan_tombol_pintasan"
+            android:cropToPadding="false"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="TFlash"
+            android:contentDescription="@string/TFlash" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/TGaleri"
+            android:layout_alignParentTop="false"
+            android:layout_below="@id/TFlash"
+            android:layout_alignStart="@id/TFlash"
+            android:src="@drawable/galeri"
+            android:background="@drawable/tekan_tombol_pintasan"
+            android:scaleType="fitXY"
+            android:layout_marginTop="5dp"
+            android:onClick="TGaleri"
+            android:contentDescription="@string/TGaleri"
+            android:elevation="0dp" />
+
+
+            <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TCapture"
+            android:layout_gravity="bottom"
+            android:scaleType="center"
+            android:onClick="TCapture"
+            android:maxHeight="200dp"
+            android:minHeight="80dp"
+            android:padding="18dp"
+            android:background="@drawable/tekan_tombol"
+            android:contentDescription="@string/TCapture"
+            android:src="@drawable/tombolpotret"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:elevation="0dp" />
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:id="@+id/block"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="#c0000000"
+            android:scaleType="matrix"
+            android:visibility="gone"
+            android:onClick="blok" />
+
+        <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:elevation="1dp"
+                android:indeterminateBehavior="cycle"
+                android:accessibilityLiveRegion="assertive"
+                android:progress="@android:integer/status_bar_notification_info_maxnum"
+            android:layout_above="@+id/TCapture"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="138dp"
+                android:indeterminateTint="#ea5959"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:theme="@android:style/Theme.Material.Light"
+                android:clickable="false"
+                android:duplicateParentState="false"
+                android:hapticFeedbackEnabled="false"
+            android:indeterminate="true"
+            android:indeterminateDuration="10000"
+            android:secondaryProgress="?android:attr/scrollbarFadeDuration"
+            android:secondaryProgressTint="?android:attr/textColorLink"
+            android:secondaryProgressTintMode="src_in" />
+
+    </RelativeLayout>
+

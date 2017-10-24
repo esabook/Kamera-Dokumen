@@ -1,0 +1,73 @@
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_alignParentBottom="true"
+android:layout_alignParentStart="true"
+tools:context=".TampilanPratinjau"
+android:paddingLeft="0dp"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:id="@+id/dasar"
+android:clipChildren="false"
+android:padding="0dp"
+android:background="#181818">
+
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        >
+
+        <id.ac.ustj.egitsaputra.kameradokumen.HandleZoom.ImageViewTouch
+            android:id="@+id/penampilPhoto"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="false"
+            />
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="1dp"
+            >
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/TSimpan"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:src="@drawable/simpanx"
+            android:background="@drawable/tekan_tombol"
+            android:cropToPadding="false"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="0.1dp"
+            android:padding="12dp"
+            android:onClick="TSimpan"
+            android:contentDescription="@string/TSimpan" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/THapus"
+            android:layout_weight="1"
+            android:src="@drawable/hapus"
+            android:background="@drawable/tekan_tombol"
+            android:scaleType="fitCenter"
+            android:padding="6dp"
+            android:onClick="THapus"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginLeft="0.1dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
